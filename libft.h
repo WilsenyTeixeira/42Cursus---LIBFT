@@ -3,6 +3,12 @@
 
 # include <stdlib.h>
 
+int             ft_atoi(const char * str);
+
+void            ft_bzero(void *s, unsigned int n);
+
+void            *ft_calloc(unsigned int num, unsigned int size);
+
 int				ft_isalnum(int c);
 
 int				ft_isalpha(int c);
