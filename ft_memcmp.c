@@ -1,4 +1,16 @@
-int memcmp ( const void * ptr1, const void * ptr2, unsigned int num )
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wde-souz <wde-souz@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/04/09 16:07:12 by wde-souz          #+#    #+#             */
+/*   Updated: 2022/04/09 16:07:12 by wde-souz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int ft_memcmp(const void *ptr1, const void *ptr2, unsigned int num)
 {
     char    *ptr1_a;
     char    *ptr2_a;

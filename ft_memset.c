@@ -1,6 +1,18 @@
-void * memset ( void * ptr, int value, unsigned int num )
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wde-souz <wde-souz@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/04/09 16:10:25 by wde-souz          #+#    #+#             */
+/*   Updated: 2022/04/09 16:10:25 by wde-souz         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void    *ft_memset(void *ptr, int value, unsigned int num)
 {
-    char * ptr_a;
+    char    *ptr_a;
 
     ptr_a = ptr;
     while (num-- > 0)
