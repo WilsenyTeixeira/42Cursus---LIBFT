@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wde-souz <wde-souz@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/09 16:46:09 by wde-souz          #+#    #+#             */
-/*   Updated: 2022/04/09 16:46:09 by wde-souz         ###   ########.fr       */
+/*   Created: 2022/04/11 18:38:46 by wde-souz          #+#    #+#             */
+/*   Updated: 2022/04/11 18:38:46 by wde-souz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void    *calloc(unsigned int num, unsigned int size)
+void    ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-    void    *ptr;
+    unsigned int index;
 
-    ptr = (void *)malloc(num * size);
-    if (!ptr)
-        return ;
-    ft_bzero(ptr, num);
-    return (ptr);
+    index = 0;
+    while (*s)
+        (*f)(index, *(s + index++));
 }
